@@ -58,6 +58,16 @@ echo "hello world"       # 输出文本
 rm -rf unwanted-folder   # 删除目录及其内容
 ```
 
+我在哪里
+
+In case you get lost:
+
+- **`cd ..`** – move up one directory
+- **`pwd`** – print working directory
+- **`clear`** – clear terminal output
+- **`ctrl + c`** – exit program
+- **`cd ~`** – navigate to home directory
+
 ## VIM 编辑器
 
 掌握在服务器上编辑文件的核心工具 VIM，熟悉其三种基本模式：
@@ -67,6 +77,38 @@ rm -rf unwanted-folder   # 删除目录及其内容
 - **命令模式** — 执行命令（按 `:` 进入）
 
 常用操作：保存退出（`:wq`）、强制退出（`:q!`）、保存（`:w`）。
+
+参考资源：
+
+- [Vi Commands Cheat Sheet](https://linuxmoz.com/vi-commands-cheat-sheet/)
+- [Open Vim - 交互式学习](https://openvim.com/)
+
+## Shell
+
+常见 Shell：
+
+- **zsh** – macOS 默认 shell，配置文件：`~/.zshrc`
+- **bash** – Bourne Again Shell，配置文件：`~/.bashrc`
+
+Show your current shell:
+
+```bash
+echo $0
+echo $SHELL
+```
+
+Reload shell:
+
+```bash
+source <shell config location>
+# 例如
+source ~/.zshrc
+source ~/.bashrc
+```
+
+参考资源：
+
+- [Introduction to Bash, VIM, and more](https://ohmyz.sh/)
 
 ## 搜索与日志排查
 
