@@ -9,19 +9,52 @@ next:
 
 # 命令行 (Command Line)
 
+> The fastest way to talk to computer
+
+## Bash is all you need
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AEmHcFH1UgQ" frameborder="0" allowfullscreen></iframe>
+
 ## 终端与 Shell
 
-掌握终端的基础，熟悉 Bash 或 Zsh 等常用 Shell 的配置与重载。
+```mermaid
+graph LR
+  Terminal((Terminal))
+  Terminal --> A["⚡ Fast"]
+  Terminal --> B["🔄 Consistent"]
+  Terminal --> C["🪶 Low Overhead"]
+```
+
+### iTerm2
+
+### Warp
 
 ## 基础导航与文件操作
 
-熟练使用 `cd`（切换目录）、`ls`（列出内容）、`mkdir`（创建目录）和 `rm`（删除）来操作系统。
+常见命令：
+
+- **`ls`** – list directory contents
+- **`cd`** – change directory
+- **`mkdir`** – make directory
+- **`rmdir`** – remove directory
+- **`cat`** – show file contents
+- **`man`** – command manual
+- **`less`** – show file contents by page
+- **`touch`** – creates an empty file
+- **`rm`** – remove file
+- **`echo`** – repeat input
 
 ```bash
 # 常用命令示例
 cd /path/to/directory    # 切换目录
 ls -la                   # 列出所有文件（含隐藏文件）
 mkdir -p my/nested/dir   # 递归创建目录
+rmdir empty-folder       # 删除空目录
+touch newfile.txt        # 创建空文件
+cat file.txt             # 查看文件内容
+less largefile.log       # 分页查看文件内容
+man ls                   # 查看 ls 命令手册
+echo "hello world"       # 输出文本
 rm -rf unwanted-folder   # 删除目录及其内容
 ```
 

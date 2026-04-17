@@ -60,6 +60,8 @@ flowchart LR
 
 > 无需成为 全栈每个领域的专家，我们是要掌握如何把这些领域的核心知识串联起来。
 
+一个能创建和管理前端和后端系统的开发者，能够理解和处理从用户界面到数据库的整个技术栈的开发者。
+
 ### 什么是 栈
 
 ```mermaid
@@ -103,4 +105,17 @@ block-beta
     E["⚡ Express.js — 后端框架"]
     R["⚛️ React — 前端框架"]
     N["💚 Node.js — 运行时环境"]
+```
+
+### 现代全栈
+
+```mermaid
+block-beta
+    columns 3
+    UI["🖥️ UI"]:3
+    React["⚛️ React"] Angular["🅰️ Angular"] Vue["💚 Vue"]
+    Server["⚙️ Server"]:3
+    Node["💚 Node.js"] Tomcat["🐱 Tomcat"] Apache["🌐 Apache"]
+    Database["🗄️ Database"]:3
+    Redis["🔴 Redis"] MySQL["🐬 MySQL"] Postgres["🐘 PostgreSQL"]
 ```
