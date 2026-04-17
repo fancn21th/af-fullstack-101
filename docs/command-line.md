@@ -1,5 +1,7 @@
 ---
-prev: false
+prev:
+  text: '前言'
+  link: '/preface'
 next:
   text: '服务器'
   link: '/servers'

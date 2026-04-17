@@ -4,6 +4,7 @@ const zhSidebar = [
   {
     text: '章节',
     items: [
+      { text: '前言', link: '/preface' },
       { text: '命令行', link: '/command-line' },
       { text: '服务器', link: '/servers' },
       { text: '操作系统', link: '/operating-systems' },
@@ -21,6 +22,7 @@ const enSidebar = [
   {
     text: 'Chapters',
     items: [
+      { text: 'Preface', link: '/en/preface' },
       { text: 'Command Line', link: '/en/command-line' },
       { text: 'Servers', link: '/en/servers' },
       { text: 'Operating Systems', link: '/en/operating-systems' },
@@ -45,7 +47,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '首页', link: '/' },
-          { text: '章节', link: '/command-line' },
+          { text: '章节', link: '/preface' },
         ],
         sidebar: zhSidebar,
         docFooter: { prev: '上一篇', next: '下一篇' },
@@ -61,7 +63,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'Chapters', link: '/en/command-line' },
+          { text: 'Chapters', link: '/en/preface' },
         ],
         sidebar: { '/en/': enSidebar },
         docFooter: { prev: 'Previous', next: 'Next' },

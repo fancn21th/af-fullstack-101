@@ -7,10 +7,10 @@ hero:
   actions:
     - theme: brand
       text: Start Learning →
-      link: /en/command-line
+      link: /en/preface
     - theme: alt
       text: View Outline
-      link: /en/command-line
+      link: /en/preface
 features:
   - icon: 📟
     title: Command Line

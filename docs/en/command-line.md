@@ -1,5 +1,7 @@
 ---
-prev: false
+prev:
+  text: 'Preface'
+  link: '/en/preface'
 next:
   text: 'Servers'
   link: '/en/servers'

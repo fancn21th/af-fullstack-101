@@ -7,10 +7,10 @@ hero:
   actions:
     - theme: brand
       text: 开始学习 →
-      link: /command-line
+      link: /preface
     - theme: alt
       text: 查看大纲
-      link: /command-line
+      link: /preface
 features:
   - icon: 📟
     title: 命令行
