@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 const zhSidebar = [
   {
@@ -36,48 +37,50 @@ const enSidebar = [
   },
 ];
 
-export default defineConfig({
-  title: "全栈开发 101",
-  description: "从命令行到容器化，一站式全栈开发学习路径",
+export default withMermaid(
+  defineConfig({
+    title: "全栈开发 101",
+    description: "从命令行到容器化，一站式全栈开发学习路径",
 
-  locales: {
-    root: {
-      label: "中文",
-      lang: "zh-CN",
-      themeConfig: {
-        nav: [
-          { text: "首页", link: "/" },
-          { text: "章节", link: "/preface" },
-        ],
-        sidebar: zhSidebar,
-        docFooter: { prev: "上一篇", next: "下一篇" },
-        outline: { label: "本页目录" },
-        lastUpdated: { text: "最后更新" },
+    locales: {
+      root: {
+        label: "中文",
+        lang: "zh-CN",
+        themeConfig: {
+          nav: [
+            { text: "首页", link: "/" },
+            { text: "章节", link: "/preface" },
+          ],
+          sidebar: zhSidebar,
+          docFooter: { prev: "上一篇", next: "下一篇" },
+          outline: { label: "本页目录" },
+          lastUpdated: { text: "最后更新" },
+        },
+      },
+      en: {
+        label: "English",
+        lang: "en-US",
+        title: "Fullstack 101",
+        description:
+          "A fullstack development learning path from command line to containerization",
+        themeConfig: {
+          nav: [
+            { text: "Home", link: "/en/" },
+            { text: "Chapters", link: "/en/preface" },
+          ],
+          sidebar: { "/en/": enSidebar },
+          docFooter: { prev: "Previous", next: "Next" },
+          outline: { label: "On this page" },
+          lastUpdated: { text: "Last updated" },
+        },
       },
     },
-    en: {
-      label: "English",
-      lang: "en-US",
-      title: "Fullstack 101",
-      description:
-        "A fullstack development learning path from command line to containerization",
-      themeConfig: {
-        nav: [
-          { text: "Home", link: "/en/" },
-          { text: "Chapters", link: "/en/preface" },
-        ],
-        sidebar: { "/en/": enSidebar },
-        docFooter: { prev: "Previous", next: "Next" },
-        outline: { label: "On this page" },
-        lastUpdated: { text: "Last updated" },
-      },
-    },
-  },
 
-  themeConfig: {
-    search: {
-      provider: "local",
+    themeConfig: {
+      search: {
+        provider: "local",
+      },
+      socialLinks: [{ icon: "github", link: "https://github.com" }],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com" }],
-  },
-});
+  }),
+);
